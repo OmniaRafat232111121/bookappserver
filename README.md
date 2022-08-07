@@ -5,11 +5,16 @@ using ReduxToolKit
 what is middle Ware ?
 How to connect middle ware with redux?
 1)reduxToolKit=>redux+callAPi(create aync thunk)
+
 2)conect Api=>response then بحصل loading of fetching Data =>using (aync=>librarey)دا نوع من ال من الMiddle ware بقدر ابعتله كذا action.
-3) Middle ware
-Type1: redux ف حالة reducer=>pure Function include (State,function)=>app Component(View)=>fire Action. 
+
+3) Middleware
+
+Type1: redux ف حالة reducer=>pure Function include (State,function)=>app Component(View)=>fire Action.
+
 Type2: action interact with store and  
 **can dispatch more action =>display action from another action. 
+
 **middle ware can get state global from reducers to using It. 
 
 Create Aync Thunk=>
@@ -18,3 +23,11 @@ Create Aync Thunk=>
 1-type =>name/fun of reducers
 When promise of fetching Data  /CallBack using Try {} when returned 1-pending connecting to APi/ fulfied->accept  accetpt return. catch{} rejected.
 
+//part 1 of action
+//getBooks->creatAction("Type",CallBackFunction)
+
+//pending createAction('book/getBooks/Pending",(payload)=>{return payload})
+
+//fulfied createAction('book/getBooks/fulfied",(payload)=>{return payload})
+
+//rejected createAction('book/getBooks/rejected",(payload)=>{return payload})
