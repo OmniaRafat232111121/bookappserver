@@ -16,5 +16,5 @@ Create Aync Thunk=>
  1)Redux action type string 
 2) callback function that should return a promise.
 1-type =>name/fun of reducers
-When promise of fetching Data  /CallBack using Try {} when returned 1-pending connecting to APi/fulfied  accetpt return. catch{} rejected.
+When promise of fetching Data  /CallBack using Try {} when returned 1-pending connecting to APi/ fulfied->accept  accetpt return. catch{} rejected.
 
